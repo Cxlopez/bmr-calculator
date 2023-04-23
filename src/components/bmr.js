@@ -65,15 +65,27 @@ function Bmr() {
           </div>
           <div>
             <label>Age</label>
-            <input value={age} onChange={(e) => setAge(e.target.value)} />
+            <input 
+              placeholder='0'
+              value={age === 0 ? '' : age}
+              onChange={(e) => setAge(e.target.value)} 
+              />
           </div>
           <div>
             <label>Weight (kg)</label>
-            <input value={weight} onChange={(e) => setWeight(e.target.value)} />
+            <input 
+              placeholder='0'
+              value={weight === 0 ? '' : weight} 
+              onChange={(e) => setWeight(e.target.value)} 
+              />
           </div>
           <div>
             <label>Height (cm)</label>
-            <input value={height} onChange={(event) => setHeight(event.target.value)} />
+            <input 
+              placeholder='0'
+              value={height === 0 ? '' : height}
+              onChange={(event) => setHeight(event.target.value)} 
+              />
           </div>
           <div>
             <label>Activity Level</label>

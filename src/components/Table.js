@@ -4,7 +4,7 @@ import '../styles/Table.css';
 export default function Table() {
   return (
     <div>
-      <div class="table-container">
+      <div className="table-container">
   <table>
     <caption>Lifestyle & Training</caption>
     <thead>
