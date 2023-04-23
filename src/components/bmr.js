@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Table from './Table';
 import '../styles/Bmr.css';
 
 function Bmr() {
@@ -31,8 +32,9 @@ function Bmr() {
         bmr *= 1.6;
       } else if (activity === 'moderately-active') {
         bmr *= 1.9;
+      } else if (activity === 'highly-active') {
+        bmr *= 2.2; 
       }
-  
       setBmr(bmr.toFixed(1));
     }
   };
@@ -43,7 +45,7 @@ function Bmr() {
   };
 
   return (
-    <div className="app">
+    <div className="bmr">
       <div className="container">
         <h2 className="center">BMR Calculator</h2>
         <form onSubmit={calcBmr}>
@@ -83,9 +85,10 @@ function Bmr() {
               required
             >
               <option value="">-- Select Activity Level --</option>
-              <option value="sedentary">Sedentary</option>
-              <option value="lightly-active">Lightly Active</option>
-              <option value="moderately-active">Moderately Active</option>
+              <option value="sedentary">Sedentary + Training 3-6x/wk</option>
+              <option value="lightly-active">Lightly Active + Training 3-6x/wk</option>
+              <option value="moderately-active">Moderately Active + Training 3-6x/wk</option>
+              <option value="highly-active">Highly Active + Training 3-6x/wk</option>
             </select>
           </div>
           <div>
@@ -105,6 +108,8 @@ function Bmr() {
         <div className="img-container">
           <img src="https://www.drawingskill.com/wp-content/uploads/11/Dumbbell-Drawing-Photo.jpg" alt="" />
         </div>
+        <Table />
+        <div className='credits'>© Cristian Sanchez Lopez</div>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 80%;
 }
 
 .container {
@@ -14,7 +14,7 @@
 }
 
 input {
-  width: 100%;
+  width: 98%;
   font-size: 1.2rem;
   padding: 8px 4px;
   margin: 8px 0;
@@ -62,4 +62,16 @@ select {
   padding: 8px 4px;
   margin: 8px 0;
   border-radius: 8px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.credits {
+  text-align: center;
+  padding-top: 40px;
+  font-size: small;
 }
