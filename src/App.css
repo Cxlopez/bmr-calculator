@@ -1,3 +1,7 @@
 body {
   font-family:serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
