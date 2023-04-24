@@ -4,6 +4,8 @@ This is a `BMR Calculator` App to find out your caloric maintenance if you're al
 
 It takes your `name`, `age`, `height`, `weight` etc. and outputs your results.
 
+https://csl-bmr-calculator.netlify.app
+
 ## Project Demo
 
 ![demo photo](https://user-images.githubusercontent.com/93356900/233871304-f28e2f7b-d4d7-47e4-9a16-ad68a2c82903.jpeg)
