@@ -12,7 +12,7 @@ https://csl-bmr-calculator.netlify.app
 
 ## Setup
 - Fork and clone this repo
-- Install dependencies with 'npm install'
+- Install dependencies with `npm install`
 - Run server with `npm start`
 
 
